@@ -12,7 +12,8 @@
     "compile": "webpack --mode production",
     "watch-server-hmr": "webpack -w --config webpack.serverHMR.js",
     "lint": "eslint . --ext js,jsx --ignore-pattern public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"heroku-postbuild": "npm run compile && ln -fs ../node_modules/bootstrap/dist public/bootstrap"
   },
   "author": "",
   "license": "ISC",

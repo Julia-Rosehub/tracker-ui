@@ -36,7 +36,7 @@ app.get('/env.js', (req, res) => {
   res.send(`window.ENV = ${JSON.stringify(env)}`)
 })
 
-const port = process.env.UI_SERVER_PORT || 8000
+const port = process.env.PORT || 8080
 const enableHMR = (process.env.ENABLE_HMR
 	|| 'true') === 'true';
 if (enableHMR && (process.env.NODE_ENV
