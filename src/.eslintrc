@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+   },
+	 "rules": {
+    "no-console": "off",
+		"semi": ["error", "never"],
+		"linebreak-style": ["error", "windows"],
+		"indent": "off",
+		"react/jsx-indent": "off",
+		"react/jsx-indent-props": "off",
+		"react/prop-types" : "off",
+		"no-tabs": 0
+  }
+}
